@@ -48,8 +48,8 @@ body {
   position: absolute;
   z-index: -1;
   font-size: min(10vw, 7.3em);
-  max-height: calc(min(25rem, 40vw));
-  width: calc(min(25rem, 40vw));
+  max-height: min(25rem, 40vw);
+  width: min(25rem, 40vw);
   overflow: hidden;
   padding: 0;
   margin: 0;
