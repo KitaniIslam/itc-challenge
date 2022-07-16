@@ -4,40 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&family=Poppins:wght@500;600&display=swap"
       rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
     />
-    <title>ITCommunity | Product preview card component</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>ITC Challenges</title>
   </head>
   <body>
-    <div class="container" id="demo">
-      <div class="gridone">
-        <h1 class="firsth1">New</h1>
-        <h1 class="secondh1">New</h1>
-        <h1 class="thirdh1">New</h1>
-        <img src="/images/product.png" alt="" />
-      </div>
-
-      <div class="gridtwo">
-        <h2>PRIVIEW</h2>
-        <h3>
-          Brand new <br />
-          white headphone
-        </h3>
-        <p>
-          Lorem ipsum dolor sit a Itaque, officia quidem. Officia perspiciatis,
-          molestiae, quo vitae non voluptatibus sit, nobis aperiam sint voluptat
-          .
-        </p>
-        <div class="box">
-          <p class="firstprice">$143.00</p>
-          <p class="secondprice"><del>$200.00</del></p>
-        </div>
-        <div class="btn">
-          <button>Add to<i class="las la-shopping-cart shop"></i></button>
-        </div>
+    <div class="container">
+      <div class="card">
+        <section class="preview flex-1">
+          <h1 class="duplicate">New</h1>
+          <img
+            src="./images/product.png"
+            alt="product image"
+            class="product-image"
+          />
+        </section>
+        <section class="product-details flex-1">
+          <h3 class="section-title">PREVIEW</h3>
+          <h1 class="product-title">Brand New White headphone</h1>
+          <p class="description">
+            Lorem ipsum dolor sit a Itaque, officia quidem. Officia
+            perspiciatis, molestiae, quo vitae non voluptatibus sit, nobis
+            aperiam sint voluptat
+          </p>
+          <section class="prices">
+            <h3>$150</h3>
+            <h3>$200</h3>
+          </section>
+          <button class="cta" type="button">Buy</button>
+        </section>
       </div>
     </div>
   </body>
