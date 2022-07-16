@@ -8,14 +8,17 @@ body {
     sans-serif;
 }
 
+.flex-1 {
+  display: flex;
+  flex: 1;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: rgb(97, 93, 91, 1);
+  background-color: #625c5a;
 }
 
 .card {
@@ -27,33 +30,29 @@ body {
   width: min(60rem, 80vw);
   max-height: 90vh;
   flex-wrap: wrap;
-  isolation: isolate;
-}
-
-.flex-1 {
-  display: flex;
-  flex: 1;
 }
 
 .preview {
   isolation: isolate;
-  /* width: min(20rem, 60vw); */
 }
 
 .product-details {
   flex-direction: column;
   justify-content: space-evenly;
   z-index: 0;
-  background-color: #070707;
   isolation: isolate;
 }
 
 .duplicate {
-  color: rgb(97, 93, 91, 0.6);
+  color: #423e3c;
   position: absolute;
   z-index: -1;
-  font-size: 7em;
-  margin: auto 0;
+  font-size: min(10vw, 7.3em);
+  max-height: calc(min(25rem, 40vw));
+  width: calc(min(25rem, 40vw));
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .duplicate::before,
@@ -63,11 +62,11 @@ body {
 }
 
 .duplicate::before {
-  color: rgb(97, 93, 91, 0.4);
+  color: #282524;
 }
 
 .duplicate::after {
-  color: rgb(97, 93, 91, 0.8);
+  color: #625c5a;
 }
 
 .product-image {
@@ -76,11 +75,8 @@ body {
   margin-inline: auto;
 }
 
-.cta {
-  color: #070707;
-}
-
 .section-title {
+  font-family: 'Alata', sans-serif;
   font-size: 1.5em;
   font-weight: 400;
 }
@@ -100,4 +96,38 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+.price {
+  font-family: 'Alegreya',
+    serif;
+  font-size: 2em;
+}
+
+.old-price {
+  color: #e74c3c;
+  text-decoration: line-through;
+}
+
+.cta {
+  height: 2.5rem;
+  color: #000;
+  background-color: #f1c40f;
+  border: 1px solid #f1c40f;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (hover) {
+
+  .cta {
+    color: #f1c40f;
+    background-color: transparent;
+  }
+
+  .cta:hover {
+    color: #000;
+    background-color: #f1c40f;
+  }
 }
